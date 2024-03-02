@@ -14,6 +14,19 @@ int WINAPI WinMain(
     UNREFERENCED_PARAMETER(lpCmdLine);
 
     WNDCLASSEX wcex;
+    TCHAR szWindowClass[] = _T("WindowsClass");
+    HWND hWnd;
+
+    wcex.cbSize = sizeof(WNDCLASSEX);
+    wcex.style
+}
+
+
+{
+    UNREFERENCED_PARAMETER(hPrevInstance);
+    UNREFERENCED_PARAMETER(lpCmdLine);
+
+    WNDCLASSEX wcex;
     TCHAR szWindowClass[] = _T("WindowClass");
     HWND hWnd;
 
@@ -96,3 +109,4 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     }
     return 0;
 }
+
